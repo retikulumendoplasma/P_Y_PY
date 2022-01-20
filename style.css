@@ -1,0 +1,252 @@
+body, html {
+  height: 100%;
+}	
+
+.box-black{
+	width: 100%;
+	color: white;
+	background-color: black;
+}
+
+.container-rc{
+	width: 100%;
+	height: auto;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	/*add flexbox*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: wrap;
+}
+
+.container-head-par {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+ }
+
+.small-text{
+	color: grey; 
+	font-size:12px;"
+	margin-top: 2px;
+}
+
+.box{
+	width: 20%;
+	box-sizing: border-box;
+}
+
+
+.fav {
+	font-size: 25px;
+	float: right;
+	margin: 5px;
+}
+
+.small-icon {
+	font-size: 20px;
+	float: right;
+	margin: 5px;
+}
+
+.opsi {
+	background-color: #FFF6EC;
+	border: 1px solid #F7CEA2 ;
+	color: black;
+	padding: 10px;
+	text-decoration: none;
+	text-align: justify;
+	display: inline-block;
+	font-size: 14px;
+	margin: 3px;
+	cursor: pointer;
+	width: 95%;
+	border-radius: 7px;
+}
+
+.btn-black {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-black:hover {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.btn-black i {
+	color: #fff;
+}
+
+.btn-black:hover i {
+	color: black;
+}
+
+
+.btn-primary:hover {
+  color: #0062cc;
+  background-color: white;
+  border-color: #0062cc;
+}
+
+.btn-danger:hover {
+  color: #bd2130;
+  background-color: white;
+  border-color: #bd2130;
+}
+
+.fav {
+	float: right; 
+	font-size: 20px; 
+	margin-right: 30px; 
+	margin-top: 10px; 
+}
+
+a {
+	color: black
+}
+
+a:hover {
+	color: grey;
+	text-decoration: none;
+}
+
+.fav, i {
+	color: black;
+}
+
+
+a:hover .fav, i {
+	color: #EA4D4D;
+	font-size: 20px;
+}
+
+a:hover .small-icon i {
+	color: #EA4D4D;
+	
+}
+
+
+.catalog {
+	width: 70%;
+	background-color: white; 
+	width: 200px; 
+	height: 300px;
+	padding-right: 5px;
+ 	padding-left: 5px;
+ 	background-size: cover;
+}
+
+.ig {
+	width: 100%;
+	background-color: white; 
+	height: 200px;
+	padding-right: 5px;
+ 	padding-left: 5px;
+ 	background-size: cover;
+ 	margin: 0;
+}
+
+.promo-big {
+	width: 500px;
+	background-color: white; 
+	height: 500px;
+	padding-right: 5px;
+ 	padding-left: 5px;
+ 	background-size: cover;
+ 	margin: 0;
+}
+
+.tumbnail {
+	float: left;
+	margin-right: 20px;
+	width: 100%;
+	background-color: white; 
+	width: 70px; 
+	height: 100px;
+	padding-right: 5px;
+ 	padding-left: 5px;
+ 	background-size: cover;
+}
+
+.nama-produk {
+	color: grey;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin: 10px;
+}
+
+.bg-t6 {
+	background-color: white !important;
+}
+
+a.bg-t6:hover, a.bg-t6:focus,
+button.bg-t6:hover,
+button.bg-t6:focus {
+	background-color: #dae0e5 !important;
+}
+
+nav{
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+
+
+footer{
+	padding: 20px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+footer a{
+	color: grey;
+}
+
+footer a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.parallax {
+	/* The image used */
+	background-image: url("images/home/main2.jpg");
+
+	/* Full height */
+	height: 75%; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*add responsive media quaries*/
+@media screen and (max-width: 1200px){
+	.box{
+		width: 40%;
+	}
+} 
+@media screen and (max-width: 600px){
+	.box{
+		width: 60%;
+	}
+}
+
+.disabled
+{
+    background-color: #DDD;
+    color: #999;
+}

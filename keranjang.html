@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<script src="scripts/jquery.js"></script>
+		<!--Font Awesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+
+		<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<style type="text/css">
+			.btn-black{
+				width: 200px; border-radius: 0px; font-size: 15px;
+			}
+
+			.col{
+				text-align: center; padding: 25px;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			form.example input[type=text] {
+				padding: 10px;
+				font-size: 17px;
+				border: 1px solid grey;
+				float: left;
+				width: 80%;
+				background: white;
+			}
+
+			form.example button {
+				float: left;
+				width: 20%;
+				padding: 10px;
+				background: white;
+				color: black;
+				font-size: 17px;
+				border: 1px solid grey;
+				border-left: none;
+				cursor: pointer;
+			}
+
+			form.example button:hover {
+				background: #0b7dda;
+				color: white;
+			}
+
+			form.example::after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+
+			.fa-checkout {
+				font-size: 11px;
+				color: black;
+				margin-right: 10px;
+			}
+		</style>
+
+		
+
+		<title>KERANJANG</title>
+
+	</head>
+	<body>
+		
+		<!-- <div class="box-black" style="text-align: center; height: 30px;">
+			<p>PROMO Gratis Ongkir dan Potongan 30% Minimal Belanja 300.000</p>
+		</div> -->
+
+		<!-- navbar 1 -->
+		<div class="container-rc" style="background-color: white; margin-left: 0px; margin-right: 0px;">
+			<!-- logo -->
+			<div class="box" style="padding-left: 30px;">
+				<p style="font-family: 'Covered By Your Grace', cursive; font-size: 50px;float: margin-bottom: 0rem; line-height: 0.5;">LUNARSKYE</p>
+				<p style="line-height: 0;">FASHION STORE</p>
+			</div>
+
+			<!-- search bar -->
+			<div class="box" style="width: 60%; margin: auto;">
+				<form class="form-inline my-2 my-lg-0">
+			     	<input class="form-control mr-sm-2" type="search" placeholder="Cari Katalog" aria-label="Search" style="border-radius: 25px; width: 100%;">
+			    </form>
+			</div>
+
+			<!-- account & cart menu -->
+			<div class="box" style="padding-right: 30px; margin-top: 10px;">
+
+				<a class="btn btn-primary" href="keranjang.html" role="button" style="background: transparent; border: none; float: right;"><i class="fas fa-shopping-cart" style="color: black; margin-right: 5px; margin-left: 5px"></i></a>
+
+				<a class="btn btn-primary" href="keranjang.html" role="button" style="background: transparent; border: none; float: right;"><i class="fas fa-heart" style="color: black; margin-right: 5px; margin-left: 5px"></i><span style="color: black;">21</span></a>
+				
+				<div class="dropdown show" style="float: right;">
+					<a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: transparent; border: none;"><i class="fas fa-user" style="color: black; margin-right: 2px"></i> <span style="color: black">Eden</span>
+					</a>
+
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item" href="#">Akun</a>
+						<a class="dropdown-item" href="#">Informasi pesanan</a>
+						<a class="dropdown-item" href="#">Penilaian</a>
+						<a class="dropdown-item" href="keranjang.html">Keluar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- navbar 2 -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-t6">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto"  style="margin: auto;">
+					<li class="nav-item">
+						<a class="nav-link" href="keranjang.html">HOME<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WANITA</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="keranjang.html">Semua</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Atasan</a>
+						<a class="dropdown-item" href="#">Bawahan</a>
+						<a class="dropdown-item" href="#">Outwear</a>
+						<a class="dropdown-item" href="#">Aksesoris</a>
+						<a class="dropdown-item" href="#"></a>
+					</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRIA</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Semua</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Atasan</a>
+						<a class="dropdown-item" href="#">Bawahan</a>
+						<a class="dropdown-item" href="#">Outwear</a>
+						<a class="dropdown-item" href="#">Aksesoris</a>
+						<a class="dropdown-item" href="#"></a>
+					</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANAK</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Semua</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Atasan</a>
+						<a class="dropdown-item" href="#">Bawahan</a>
+						<a class="dropdown-item" href="#">Outwear</a>
+						<a class="dropdown-item" href="#">Aksesoris</a>
+						<a class="dropdown-item" href="#"></a>
+					</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">BLOG</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		
+		<div class="row" style="margin: 20px 100px 20px 100px;">
+			<!-- START ITEM LIST -->
+			<div class="col-sm-8">
+				<div class="checkbox">
+						<input type="checkbox" value="" class="cb" id="defaultChecked1_master1" checked style="float: left; margin-top: 5px; margin-right: 10px;">
+				</div>
+				<label style="border-bottom: 1px solid black;"><b>BERRYBENKA</b></label>
+				<div class="container" style="background-color: #DFEFF9; padding: 10px; float: left;">
+					<!-- START ITEM 1 -->
+					<div class="checkbox">
+  						<input type="checkbox" value="" id="defaultChecked1_1" class="cb1 cb" checked style="float: left; margin-top: 6%; margin-right: 10px;">
+					</div>
+					<div class="container tumbnail" style="background-image: url('images/catalog/wanita/c1.jpg');"></div> 
+					<p style="margin-bottom: 2px">Brifina Checkered Blazer Grey <span class="h6" style="float: right; color: #0F3981;"><span style="text-decoration: line-through; color: #EA4D4D; font-size: 12px;">IDR459,000</span> <br>IDR239,000</span></p>
+					<p class="small-text" style="margin-top: -5px; margin-bottom: 2px;">Size: L, Color: BLACK</p>
+
+					<!-- START PLUS-MINUS BUTTON -->
+					<div class="form-group">
+				        <div class="input-group" style="width: 16%">
+				            <div class="input-group-btn">
+				                <button id="down" class="btn btn-default" onclick=" down('0')">-</button>
+				            </div>
+				            <input type="text" id="myNumber" class="form-control input-number" value="0" readonly="readonly"/>
+				            <div class="input-group-btn">
+				                <button id="up" class="btn btn-default" onclick="up('7')">+</button>
+				            </div>
+				        </div>
+				        <span class="small-text" style="color: red;">Tersisa 7 item</span>
+				        <a href="#" style="float: right;"><i class="fas fa-heart small-icon" style="color: black;"></i></a>
+				        <a href="#" style="float: right;"><i class="fas fa-trash small-icon" style="color: black;"></i></a>
+				    </div>
+				    <!-- END PLUS-MINUS BUTTON -->
+					<hr>
+				    <!-- END ITEM 1 -->
+				</div>
+
+				<div class="container" style="background-color: #DFEFF9; padding: 10px; float: left; margin-top: -20px;">
+					<!-- START ITEM 2 -->
+					<div class="checkbox">
+  						<input type="checkbox" value="" id="defaultChecked1_2" class="cb1 cb" checked style=" float: left; margin-top: 6%; margin-right: 10px;">
+					</div>
+					<div class="container tumbnail" style="background-image: url('images/catalog/pria/hat.png');"></div> 
+					<p style="margin-bottom: 2px">Men Tonight Snapback<span class="h6" style="float: right; color: #0F3981;">IDR150,000</span></p>
+					<p class="small-text" style="margin-top: -5px; margin-bottom: 2px;">Size: ONE SIZE, Color: NAVY</p>
+
+					<!-- START PLUS-MINUS BUTTON -->
+					<div class="form-group">
+				        <div class="input-group" style="width: 16%">
+				            <div class="input-group-btn">
+				                <button id="down1" class="btn btn-default" onclick=" down1('0')">-</button>
+				            </div>
+				            <input type="text" id="myNumber1" class="form-control input-number" value="0" readonly="readonly"/>
+				            <div class="input-group-btn">
+				                <button id="up1" class="btn btn-default" onclick="up1('21')">+</button>
+				            </div>
+				        </div>
+				        <span class="small-text">Tersisa 21 item</span>
+				        <a href="#" style="float: right;"><i class="fas fa-heart small-icon" style="color: black;"></i></a>
+				        <a href="#" style="float: right;"><i class="fas fa-trash small-icon" style="color: black;"></i></a>
+				    </div>
+				    <!-- END PLUS-MINUS BUTTON -->
+				    <!-- END ITEM 2 -->
+				</div>
+
+				<div class="checkbox">
+						<input type="checkbox" value=""  class="cb" id="defaultChecked2_master2" checked style="float: left; margin-top: 20px; margin-right: 10px;">
+				</div>
+				<label style="border-bottom: 1px solid black; margin-top: 15px;"><b>HIJABENKA</b></label>
+				<div class="container" style="background-color: #DFEFF9; padding: 10px; float: left;">
+					<!-- START ITEM 1 -->
+					<div class="checkbox">
+  						<input type="checkbox" value="" id="defaultChecked2_1" class="cb2 cb" checked style="float: left; margin-top: 6%; margin-right: 10px;">
+					</div>
+					<div class="container tumbnail" style="background-image: url('images/catalog/wanita/Hijabenka_Tata Outer Mocca.png');"></div> 
+					<p style="margin-bottom: 2px">Tata Outer Mocca <span class="h6" style="float: right; color: #0F3981;">IDR320,000</span></p>
+					<p class="small-text" style="margin-top: -5px; margin-bottom: 2px;">Size: M, Color: MOCCA</p>
+
+					<!-- START PLUS-MINUS BUTTON -->
+					<div class="form-group">
+				        <div class="input-group" style="width: 16%">
+				            <div class="input-group-btn">
+				                <button id="down2" class="btn btn-default" onclick=" down2('0')">-</button>
+				            </div>
+				            <input type="text" id="myNumber2" class="form-control input-number" value="0" readonly="readonly"/>
+				            <div class="input-group-btn">
+				                <button id="up2" class="btn btn-default" onclick="up2('30')">+</button>
+				            </div>
+				        </div>
+				        <span class="small-text">Tersisa 30 item</span>
+				        <a href="#" style="float: right;"><i class="fas fa-heart small-icon" style="color: black;"></i></a>
+				        <a href="#" style="float: right;"><i class="fas fa-trash small-icon" style="color: black;"></i></a>
+				    </div>
+				    <!-- END PLUS-MINUS BUTTON -->
+				    <!-- END ITEM 1 -->
+				</div>
+
+				<div class="checkbox">
+						<input type="checkbox" value="" class="cb" id="defaultChecked3_master3" checked style="float: left; margin-top: 20px; margin-right: 10px;">
+				</div>
+				<label style="border-bottom: 1px solid black; margin-top: 15px;"><b>H&M</b></label>
+				<div class="container" style="background-color: #DFEFF9; padding: 10px; float: left;">
+					<!-- START ITEM 1 -->
+					<div class="checkbox">
+  						<input type="checkbox" value="" id="defaultChecked3_1" class="cb3 cb" checked style="float: left; margin-top: 6%; margin-right: 10px;">
+					</div>
+					<div class="container tumbnail" style="background-image: url('images/catalog/pria/HnM_Hooded Top Rick and Morty.png');"></div> 
+					<p style="margin-bottom: 2px">Hooded Top Rick and Morty <span class="h6" style="float: right; color: #0F3981;"><span style="text-decoration: line-through; color: #EA4D4D; font-size: 12px;">IDR499,000</span><br>IDR299,000</span></p>
+					<p class="small-text" style="margin-top: -5px; margin-bottom: 2px;">Size: L, Color: BLACK</p>
+
+					<!-- START PLUS-MINUS BUTTON -->
+					<div class="form-group">
+				        <div class="input-group" style="width: 16%">
+				            <div class="input-group-btn">
+				                <button id="down3" class="btn btn-default" onclick=" down3('0')">-</button>
+				            </div>
+				            <input type="text" id="myNumber3" class="form-control input-number" value="0" readonly="readonly"/>
+				            <div class="input-group-btn">
+				                <button id="up3" class="btn btn-default" onclick="up3('4')">+</button>
+				            </div>
+				        </div>
+				        <span class="small-text" style="color: red;">Tersisa 4 item</span>
+				        <a href="#" style="float: right;"><i class="fas fa-heart small-icon" style="color: black;"></i></a>
+				        <a href="#" style="float: right;"><i class="fas fa-trash small-icon" style="color: black;"></i></a>
+				    </div>
+				    <!-- END PLUS-MINUS BUTTON -->
+					<hr>
+				    <!-- END ITEM 1 -->
+				</div>
+
+				<div class="container" style="background-color: #DFEFF9; padding: 10px; float: left; margin-top: -20px;">
+					<!-- START ITEM 2 -->
+					<div class="checkbox">
+  						<input type="checkbox" value="" id="defaultChecked3_2" class="cb3 cb" checked style="float: left; margin-top: 6%; margin-right: 10px;">
+					</div>
+					<div class="container tumbnail" style="background-image: url('images/catalog/anak/HnM_Cotton Shorts.png');"></div> 
+					<p style="margin-bottom: 2px">Cotton Shorts <span class="h6" style="float: right; color: #0F3981;"><span style="text-decoration: line-through; color: #EA4D4D; font-size: 12px;">IDR100,000</span><br>IDR35,000</span></p>
+					<p class="small-text" style="margin-top: -5px; margin-bottom: 2px;">Size: ONE SIZE, Color: BLUE</p>
+
+					<!-- START PLUS-MINUS BUTTON -->
+					<div class="form-group">
+				        <div class="input-group" style="width: 16%">
+				            <div class="input-group-btn">
+				                <button id="down4" class="btn btn-default" onclick=" down4('0')">-</button>
+				            </div>
+				            <input type="text" id="myNumber4" class="form-control input-number" value="0" readonly="readonly"/>
+				            <div class="input-group-btn">
+				                <button id="up4" class="btn btn-default" onclick="up4('33')">+</button>
+				            </div>
+				        </div>
+				        <span class="small-text">Tersisa 33 item</span>
+				        <a href="#" style="float: right;"><i class="fas fa-heart small-icon" style="color: black;"></i></a>
+				        <a href="#" style="float: right;"><i class="fas fa-trash small-icon" style="color: black;"></i></a>
+				    </div>
+				    <!-- END PLUS-MINUS BUTTON -->
+					<hr>
+				    <!-- END ITEM 2 -->
+				</div>
+
+				<div class="container" style="background-color: #DFEFF9; padding: 10px; float: left; margin-top: -20px;">
+					<!-- START ITEM 3 -->
+					<div class="checkbox">
+  						<input type="checkbox" value="" id="defaultChecked3_3" class="cb3 cb" checked style="float: left; margin-top: 6%; margin-right: 10px;">
+					</div>
+					<div class="container tumbnail" style="background-image: url('images/catalog/wanita/HnM_Long Butterfly-sleeved Dress.png');"></div> 
+					<p style="margin-bottom: 2px">Long Butterfly-sleeved Dress <span class="h6" style="float: right; color: #0F3981;"><span style="text-decoration: line-through; color: #EA4D4D; font-size: 12px;">IDR599,000</span><br>IDR250,000</span></p>
+					<p class="small-text" style="margin-top: -5px; margin-bottom: 2px;">Size: S, Color: BEIGE</p>
+
+					<!-- START PLUS-MINUS BUTTON -->
+					<div class="form-group">
+				        <div class="input-group" style="width: 16%">
+				            <div class="input-group-btn">
+				                <button id="down5" class="btn btn-default" onclick=" down5('0')">-</button>
+				            </div>
+				            <input type="text" id="myNumber5" class="form-control input-number" value="0" readonly="readonly"/>
+				            <div class="input-group-btn">
+				                <button id="up5" class="btn btn-default" onclick="up5('2')">+</button>
+				            </div>
+				        </div>
+				        <span class="small-text" style="color: red;">Tersisa 2 item</span>
+				        <a href="#" style="float: right;"><i class="fas fa-heart small-icon" style="color: black;"></i></a>
+				        <a href="#" style="float: right;"><i class="fas fa-trash small-icon" style="color: black;"></i></a>
+				    </div>
+				    <!-- END PLUS-MINUS BUTTON -->
+				    <!-- END ITEM 3 -->
+				</div>
+				<div class="checkbox">
+						<input type="checkbox" value="" class="cb" id="defaultChecked4_master4" checked style="float: left; margin-top: 5px; margin-right: 10px;">
+				</div>
+				<label style="border-bottom: 1px solid black;"><b>BINCO</b></label>
+				<div class="container" style="background-color: #DFEFF9; padding: 10px; float: left;">
+					<!-- START ITEM 1 -->
+					<div class="checkbox">
+  						<input type="checkbox" value="" id="defaultChecked4_1" class="cb4 cb" checked style="float: left; margin-top: 6%; margin-right: 10px;">
+					</div>
+					<div class="container tumbnail" style="background-image: url('images/catalog/wanita/i1.jpg');"></div> 
+					<p style="margin-bottom: 2px">Waterfall Army Cardi <span class="h6" style="float: right; color: #0F3981;">IDR290,000</span></p>
+					<p class="small-text" style="margin-top: -5px; margin-bottom: 2px;">Size: L, Color: DARK GREEN</p>
+
+					<!-- START PLUS-MINUS BUTTON -->
+					<div class="form-group">
+				        <div class="input-group" style="width: 16%">
+				            <div class="input-group-btn">
+				                <button id="down6" class="btn btn-default" onclick=" down6('0')">-</button>
+				            </div>
+				            <input type="text" id="myNumber6" class="form-control input-number" value="0" readonly="readonly"/>
+				            <div class="input-group-btn">
+				                <button id="up6" class="btn btn-default" onclick="up6('26')">+</button>
+				            </div>
+				        </div>
+				        <span class="small-text">Tersisa 26 item</span>
+				        <a href="#" style="float: right;"><i class="fas fa-heart small-icon" style="color: black;"></i></a>
+				        <a href="#" style="float: right;"><i class="fas fa-trash small-icon" style="color: black;"></i></a>
+				    </div>
+				    <!-- END PLUS-MINUS BUTTON -->
+					<hr>
+				    <!-- END ITEM 1 -->
+				</div>
+
+				<div class="container" style="background-color: #DFEFF9; padding: 10px; float: left; margin-top: -20px;">
+					<!-- START ITEM 2 -->
+					<div class="checkbox">
+  						<input type="checkbox" value="" id="defaultChecked4_2" class="cb4 cb" checked style=" float: left; margin-top: 6%; margin-right: 10px;">
+					</div>
+					<div class="container tumbnail" style="background-image: url('images/catalog/wanita/Hijabenka_Ditya Parka Outer Dark Olive.png');"></div> 
+					<p style="margin-bottom: 2px">Parka Outer Dark Olive <span class="h6" style="float: right; color: #0F3981;">IDR320,000</span></p>
+					<p class="small-text" style="margin-top: -5px; margin-bottom: 2px;">Size: M, Color: DARK OLIVE</p>
+
+					<!-- START PLUS-MINUS BUTTON -->
+					<div class="form-group">
+				        <div class="input-group" style="width: 16%">
+				            <div class="input-group-btn">
+				                <button id="down7" class="btn btn-default" onclick=" down7('0')">-</button>
+				            </div>
+				            <input type="text" id="myNumber7" class="form-control input-number" value="0" readonly="readonly"/>
+				            <div class="input-group-btn">
+				                <button id="up7" class="btn btn-default" onclick="up7('24')">+</button>
+				            </div>
+				        </div>
+				        <span class="small-text">Tersisa 24 item</span>
+				        <a href="#" style="float: right;"><i class="fas fa-heart small-icon" style="color: black;"></i></a>
+				        <a href="#" style="float: right;"><i class="fas fa-trash small-icon" style="color: black;"></i></a>
+				    </div>
+				    <!-- END PLUS-MINUS BUTTON -->
+				    <!-- END ITEM 2 -->
+				</div>
+
+				<div class="checkbox">
+						<input type="checkbox" value="" class="cb" id="defaultChecked5_master5" checked style="float: left; margin-top: 5px; margin-right: 10px;">
+				</div>
+				<label style="border-bottom: 1px solid black;"><b>PROLAPS</b></label>
+				<div class="container" style="background-color: #DFEFF9; padding: 10px; float: left;">
+					<!-- START ITEM 1 -->
+					<div class="checkbox">
+  						<input type="checkbox" value="" id="defaultChecked5_1" class="cb5 cb" checked style="float: left; margin-top: 6%; margin-right: 10px;">
+					</div>
+					<div class="container tumbnail" style="background-image: url('images/catalog/wanita/Pomelo.jpg');"></div> 
+					<p style="margin-bottom: 2px">Striped Button Up A-Line Skirt <span class="h6" style="float: right; color: #0F3981;">IDR349,000</span></p>
+					<p class="small-text" style="margin-top: -5px; margin-bottom: 2px;">Size: M, Color: WHITE</p>
+
+					<!-- START PLUS-MINUS BUTTON -->
+					<div class="form-group">
+				        <div class="input-group" style="width: 16%">
+				            <div class="input-group-btn">
+				                <button id="down8" class="btn btn-default" onclick=" down8('0')">-</button>
+				            </div>
+				            <input type="text" id="myNumber8" class="form-control input-number" value="0" readonly="readonly"/>
+				            <div class="input-group-btn">
+				                <button id="up8" class="btn btn-default" onclick="up8('17')">+</button>
+				            </div>
+				        </div>
+				        <span class="small-text">Tersisa 17 item</span>
+				        <a href="#" style="float: right;"><i class="fas fa-heart small-icon" style="color: black;"></i></a>
+				        <a href="#" style="float: right;"><i class="fas fa-trash small-icon" style="color: black;"></i></a>
+				    </div>
+				    <!-- END PLUS-MINUS BUTTON -->
+					<hr>
+				    <!-- END ITEM 1 -->
+				</div>
+
+				<div class="container" style="background-color: #DFEFF9; padding: 10px; float: left; margin-top: -20px;">
+					<!-- START ITEM 2 -->
+					<div class="checkbox">
+  						<input type="checkbox" value="" id="defaultChecked5_2" class="cb5 cb" checked style=" float: left; margin-top: 6%; margin-right: 10px;">
+					</div>
+					<div class="container tumbnail" style="background-image: url('images/catalog/wanita/g1.jpg');"></div> 
+					<p style="margin-bottom: 2px">Yellow Basic Cardi <span class="h6" style="float: right; color: #0F3981;"><span style="text-decoration: line-through; color: #EA4D4D; font-size: 12px;">IDR150,000</span><br>IDR100,000</span></p>
+					<p class="small-text" style="margin-top: -5px; margin-bottom: 2px;">Size: L, Color: BLACK</p>
+
+					<!-- START PLUS-MINUS BUTTON -->
+					<div class="form-group">
+				        <div class="input-group" style="width: 16%">
+				            <div class="input-group-btn">
+				                <button id="down9" class="btn btn-default" onclick=" down9('0')">-</button>
+				            </div>
+				            <input type="text" id="myNumber9" class="form-control input-number" value="0" readonly="readonly"/>
+				            <div class="input-group-btn">
+				                <button id="up9" class="btn btn-default" onclick="up9('41')">+</button>
+				            </div>
+				        </div>
+				        <span class="small-text">Tersisa 41 item</span>
+				        <a href="#" style="float: right;"><i class="fas fa-heart small-icon" style="color: black;"></i></a>
+				        <a href="#" style="float: right;"><i class="fas fa-trash small-icon" style="color: black;"></i></a>
+				    </div>
+				    <!-- END PLUS-MINUS BUTTON -->
+				    <!-- END ITEM 2 -->
+				</div>
+
+
+			</div>
+			<!-- END ITEM LIST -->
+
+			<!-- START DETAIL PEMBELIAN -->
+			<div class="col-sm-4">
+				<label style="border-bottom: 1px solid black;"><b>Detail Pembayaran</b></label>
+				<div class="container" style="background-color: #FFF6EC; padding: 10px;">
+					<img src="images/voucher.png" style="width: 20px;">
+					Masukkan voucher atau gift card <br> 
+					<!-- START VOUCHER -->
+					<form class="example" style="width: 93%; margin: auto;">
+						<input type="text" placeholder="Masukkan Kode" name="search">
+						<button type="submit">Cari</button>
+					</form>
+					<!-- END VOUCHER -->	<hr>
+
+					<h6>Lokasi Pembeli</h6>
+					<p><i class="fas fa-map fa-checkout"></i><b>Eden Fabian</b><span style="float: right;"><a href="" style="color: #EA4D4D; font-size: 14px;">Ubah</a></span></p>
+					<p style="margin-left: 20px; margin-top: -20px;">Jl. Karya Wisata. JCity, Medan Johor, Kota Medan, Sumatera Utara.</p>
+					<p><i class="fas fa-phone fa-checkout"></i>0821 1010 0101<span style="float: right;"><a href="" style="color: #EA4D4D; font-size: 14px;">Ubah</a></span></p>
+					<p><i class="fas fa-envelope-open fa-checkout"></i>eden.paradise@mail.com<span style="float: right;"><a href="" style="color: #EA4D4D; font-size: 14px;">Ubah</a></span></p>
+					<hr>
+					<h6>Ringkasan belanja</h6>
+					<!-- <p>Subtotal <span class="small-text">(10 item)</span> <span style="float: right;">IDR 2,352,000</span><br> -->
+					Pengiriman <span style="float: right;">GRATIS</span><br>Total<span style="float: right;font-weight: bold; color: #EA4D4D;" id="totalharga">IDR 0 </span></p>
+
+					<hr>
+
+					<h6>Pembayaran</h6>
+					<button class="opsi"><i class="fas fa-credit-card fa-checkout"></i>Kredit/Kartu Debit<i class="fas fa-angle-right" style="float: right; color: black"></i></button>
+					<button class="opsi"><i class="fas fa-truck fa-checkout"></i>Bayar di Tempat<i class="fas fa-angle-right" style="float: right; color: black"></i></button>
+					<button class="opsi"><i class="fas fa-university fa-checkout"></i>Bank Transfer<i class="fas fa-angle-right" style="float: right; color: black"></i></button>
+					<button class="opsi"><i class="fa fa-location-arrow fa-checkout"></i>Bayar di Counter<i class="fas fa-angle-right" style="float: right; color: black"></i></button>
+					<button class="opsi"><i class="fas fa-globe fa-checkout"></i>Paypal<i class="fas fa-angle-right" style="float: right; color: black"></i></button>
+					<!-- <p style="color: #EA4D4D; font-size: 14px;">Pembayaran di Counter Indomaret Telah Dipilih.</p> -->
+					<button id="btnbuy" class="btn btn-black" style="width: 100%; margin-bottom: 10px;" disabled>Buat Pesanan</button>
+				</div>
+			</div>
+			<!-- END DETAIL PEMBELIAN -->
+		</div>
+		
+
+
+
+
+		<footer style="padding-top: 50px;">
+			<div class="row" style="line-height: 1.3;">
+				<div class="col-sm-2" style="text-align: right; border-right: 1px solid grey;">
+					<h5>BELANJA</h5>
+					<a href="">Produk Baru</a><br>
+					<a href="">Promo Spesial</a><br>
+					<a href="">Pakaian Wanita</a><br>
+					<a href="">Pakaian Pria</a><br>
+					<a href="">Pakaian Anak</a><br>
+					<a href="">Aksesoris</a><br>
+					<a href="">Brand</a>
+				</div>
+				<div class="col-sm-2" style="text-align: right; border-right: 1px solid grey;">
+					<h5>INFORMASI</h5>
+					<a href="">Tentang Kami</a><br>
+					<a href="">Layanan Pelanggan</a><br>
+					<a href="">Blog</a><br>
+					<a href="">FAQs</a><br>
+					<a href="">Kontak Kami</a>
+				</div>
+				<div class="col-sm-2" style="text-align: right; border-right: 1px solid grey;">
+					<h5>PESAN</h5>
+					<a href="">Akun Saya</a><br>
+					<a href="">Lihat Keranjang</a><br>
+					<a href="">Privacy Policy</a><br>
+					<a href="">Cookie Policy</a>
+				</div>
+				<div class="col-sm-6" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+					<h5>LANGGANAN NEWSLETTER</h5>
+					<p style="color: grey; font-size: 12px;"> Daftarkan e-mail Anda untuk berlangganan newsletter kami dan dapatkan informasi produk juga promo menarik TEAM6!</p>
+					<form style="width: 75%; float: left;">
+						<div class="form-group">
+							<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nama@mail.com" style="background-color: black; color: white;" >
+						</div>
+						<button type="submit" class="btn btn-black" style="width: 40%; margin-bottom: 10px; border-color: white;">Langganan</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="scripts/PlusMinus.js"></script>
+	</body>
+</html>
